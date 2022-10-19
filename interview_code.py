@@ -1,19 +1,9 @@
-import re
-import urllib
 from zipfile import ZipFile
 import os
-from PIL import Image
-import pytesseract
 from pdf2image import convert_from_path
 from bs4 import BeautifulSoup
-from PyPDF2 import *
 import requests
-import threading
 import concurrent.futures
-from urllib.request import urlretrieve
-import PyPDF2
-import imageio
-from poppler import *
 
 
 def download_file(url):
