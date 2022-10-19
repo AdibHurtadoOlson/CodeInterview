@@ -69,10 +69,6 @@ def unzip_files(rel_dir_name):
 
 
 def pdf_to_image():
-    print("none")
-
-
-def find_revenue():
     pdf_pages = convert_from_path("010211483_201906_990_2021012717663616.pdf", 500)
 
     for page_enumeration, page in enumerate(pdf_pages):
@@ -81,24 +77,8 @@ def find_revenue():
         page.save(filename, "JPEG")
 
 
-    '''with open("010211483_201906_990_2021012717663616.pdf", "rb") as file:
-        image = imageio.imread(file.read())
-
-        image_str = pytesseract.image_to_string(image)
-
-        print(image_str)'''
-
-
-    '''page = convert_from_path(
-        "C:\\Users\\adibh\PycharmProjects\\MarketSmartCodeInterview\\data\\010211483_201906_990_2021012717663616.pdf",
-        500)
-
-    for pageNum, imgBlob in enumerate(page):
-        text = pytesseract.image_to_string(imgBlob, lang="eng")
-
-        with open("010211483_201906_990_2021012717663616.txt", "a") as file:
-            file.write(text)'''
-
+def find_revenue():
+    print("done")
 
 def run():
     run_downloader = input("Do you want to download all files? Note:" +
